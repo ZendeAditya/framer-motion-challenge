@@ -18,7 +18,7 @@ const Sidebar = (props: Props) => {
     setToggle((prev) => !prev);
   };
   return (
-    <div className="relative border h-screen">
+    <div className="relative border h-[95vh] shadow-lg shadow-black/30 my-3 px-2 py-2 rounded-lg bg-transparent mx-1">
       {/* sidebar arrow  */}
       <div className={`px-2 py-3 absolute -right-10`}>
         <button onClick={handleToggle} className="">
@@ -27,8 +27,8 @@ const Sidebar = (props: Props) => {
       </div>
       <div
         className={`${!toggle ? "w-60" : "w-0"}  relative  ${
-          toggle ? "-translate-x-60" : "translate-x-0"
-        } duration-500 ease-in`}
+          toggle ? "-translate-x-64" : "translate-x-0"
+        } duration-500 ease-in transition-all`}
       >
         <div className="max-h-screen overflow-auto">
           <h2 className="text-lg ">#50 Days Framer motion Challenge</h2>
