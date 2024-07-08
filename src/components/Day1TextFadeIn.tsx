@@ -17,7 +17,7 @@ const Day1TextFadeIn = (props: Props) => {
             key={ind}
             initial={{ opacity: 0, color: "blue" }}
             animate={{ opacity: 1, color: "orange" }}
-            transition={{ duration: 0.3 * (ind / 2) }}
+            transition={{ duration: 0.5 * (ind / 2) }}
           >
             {char}
           </motion.span>
@@ -26,7 +26,8 @@ const Day1TextFadeIn = (props: Props) => {
       <motion.p
         initial={{ y: 52, x: 0, opacity: 0 }}
         animate={{ y: 0, x: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.5 * 0.1 }}
+        exit={{ y: -2, x: 0, opacity: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 * 0.1, ease: "easeIn" }}
         className="px-5 py-4"
       >
         {para.split("").map((str, idx) => {
@@ -34,7 +35,11 @@ const Day1TextFadeIn = (props: Props) => {
             <motion.span
               initial={{ y: 0, x: 0, opacity: 0 }}
               animate={{ y: 0, x: 52, opacity: 1 }}
-              transition={{ duration: 0.2 * idx, delay: idx * 0.1 }}
+              transition={{
+                duration: 0.2 * idx,
+                delay: idx * 0.1,
+                ease: "easeInOut",
+              }}
               key={idx}
             >
               {str}
