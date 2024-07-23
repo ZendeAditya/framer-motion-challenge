@@ -1,3 +1,4 @@
+
 import Day6ProgressBar from "@/components/Day6ProgressBar";
 import React from "react";
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 type Props = {};
 const Day6ProgressBarPage = (props: Props) => {
   return (
-    <div>
+    <div className="">
       <Day6ProgressBar />
     </div>
   );
