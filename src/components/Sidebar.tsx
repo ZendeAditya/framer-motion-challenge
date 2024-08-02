@@ -14,6 +14,7 @@ const dayArray = [
   { Day: 7, link: "Day7" },
   { Day: 8, link: "Day8" },
   { Day: 9, link: "Day9" },
+  { Day: 10, link: "Day10" },
 ];
 import { useRouter } from "next/navigation";
 const Sidebar = (props: Props) => {

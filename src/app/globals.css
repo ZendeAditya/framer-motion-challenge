@@ -116,3 +116,11 @@ body {
   height: 15px;
   background: red;
 }
+
+.todobackground {
+  background-color: #222323;
+  opacity: 1;
+  background-image: linear-gradient(#5c5656 1.1px, transparent 1.1px),
+    linear-gradient(to right, #5c5656 1.1px, #222323 1.1px);
+  background-size: 22px 22px;
+}
